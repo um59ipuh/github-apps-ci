@@ -42,7 +42,11 @@
                 "@angular/compiler*",
                 "@angular/core"
             ],
-            "enabled": false
+            "enabled": false,
+            "matchUpdateTypes": [
+                "minor",
+                "patch"
+            ]
         }
     ]
 }
