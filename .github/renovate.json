@@ -9,34 +9,32 @@
     "packageRules": [
         {
             "description": [
+                "Scan all major dependencies including problematic libs"
+            ],
+            "groupName": "all major dependencies",
+            "groupSlug": "all-major",
+            "matchUpdateTypes": [
+                "major"
+            ]
+        },
+        {
+            "description": [
                 "Scan all no major dependencies"
             ],
             "groupName": "all minor and patch dependencies",
             "groupSlug": "all-minor-patch",
-            "matchPackageNames": [
-                "@angular/platform*",
-                "org.modelmapper*",
-                "autoprefixer",
-                "@angular/compiler*",
-                "@angular/core"
-            ],
-            "enabled": false,
             "matchUpdateTypes": [
                 "minor",
                 "patch"
             ]
         },
         {
-            "description": [
-                "Scan all major dependencies including problematic libs"
-            ],
-            "groupName": "all major dependencies",
-            "groupSlug": "all-major",
-            "matchPackageNames": [
-                "*"
-            ],
-            "matchUpdateTypes": [
-                "major"
+            "ignoreDeps": [
+                "@angular/platform*",
+                "org.modelmapper*",
+                "autoprefixer",
+                "@angular/compiler*",
+                "@angular/core"
             ]
         }
     ]
