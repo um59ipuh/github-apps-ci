@@ -1,0 +1,24 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "description": [
+        "before 7am on monday in every month"
+    ],
+    "schedule": [
+        "* * * * 1-5"
+    ],
+    "packageRules": [
+        {
+            "description": [
+                "Scan all major dependencies including problematic libs"
+            ],
+            "groupName": "all major dependencies",
+            "groupSlug": "all-major",
+            "matchPackageNames": [
+                "*"
+            ],
+            "matchUpdateTypes": [
+                "major"
+            ]
+        }
+    ]
+}
