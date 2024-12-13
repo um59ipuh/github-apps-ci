@@ -9,19 +9,6 @@
     "packageRules": [
         {
             "description": [
-                "Scan all major dependencies including problematic libs"
-            ],
-            "groupName": "all major dependencies",
-            "groupSlug": "all-major",
-            "matchPackageNames": [
-                "*"
-            ],
-            "matchUpdateTypes": [
-                "major"
-            ]
-        },
-        {
-            "description": [
                 "Scan all no major dependencies"
             ],
             "groupName": "all minor and patch dependencies",
