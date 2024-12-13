@@ -13,6 +13,9 @@
             ],
             "groupName": "all major dependencies",
             "groupSlug": "all-major",
+            "matchPackageNames": [
+                "*"
+            ],
             "matchUpdateTypes": [
                 "major"
             ]
@@ -23,6 +26,9 @@
             ],
             "groupName": "all minor and patch dependencies",
             "groupSlug": "all-minor-patch",
+            "matchPackageNames": [
+                "*"
+            ],
             "matchUpdateTypes": [
                 "minor",
                 "patch"
