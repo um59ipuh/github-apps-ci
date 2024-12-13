@@ -35,12 +35,17 @@
             ]
         },
         {
-            "ignoreDeps": [
+            "matchPackageNames": [
                 "@angular/platform*",
                 "org.modelmapper*",
                 "autoprefixer",
                 "@angular/compiler*",
                 "@angular/core"
+            ],
+            "enabled": false,
+            "matchUpdateTypes": [
+                "minor",
+                "patch"
             ]
         }
     ]
